@@ -5,8 +5,14 @@
 
 ## 兼容性
 
-当前主流的浏览器都支持 `box-sizing` 属性。仅 IE家族 在 IE 8 之前不支持。
-部分浏览器需要加前缀（如 Firefox）。
+具体参见[caniuse](https://caniuse.com/#search=box-sizing)
+
+当前主流的浏览器都支持 `box-sizing` 属性。仅 IE家族 在 IE 8 之前不支持。部分浏览器需要加前缀（如 Firefox）。
+
+注意事项：
+
+  - 对于IE8，设置了 min/max-width/height，`box-sizing`就失效；
+  - IE 9 会有 bug；
 
 ## `border-box`的应用
 
