@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS usage</title>
+	<style>
+		@import "./import.css";
+	
+		.inner-style:after {
+			content: "inner";
+		}
+
+		/* 不生效 */
+		@import "./import2.css";
+	</style>
+	<link rel="stylesheet" href="./link.css">
+</head>
+<body>
+	<div class="inner-style"></div>
+	<div class="link-style"></div>
+	<div class="import-style"></div>
+	<div class="import2-style"></div>
+</body>
+</html>
