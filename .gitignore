@@ -2,3 +2,4 @@
 # Temp files
 .DS_Store
 *.tmp.*
+*.tmp/
