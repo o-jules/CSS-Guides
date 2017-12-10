@@ -1,11 +1,17 @@
 # Media query
 
-CSS 文件中的 media query，格式示例：
+## Abstract
+
+   - Media query was introduced in HTML4 and CSS2. But further implemented in HTML5 and CSS3.
+
+## Examples
+
+Code samples of media query:
 
 ```css
 @media screen and (max-width: 480px) {}
 
-@media (pointer: fine) {}
+@media (pointer: fine) {} /* `@media all and CONDITION` is equivilent to `@media CONDITION`*/
 
 @supports (display: flex) {}
 
@@ -13,16 +19,17 @@ CSS 文件中的 media query，格式示例：
 ```
 
 ### `media` type
+
   - `all`
   - `print`
   - `screen`
   - `speech`
 
-### `media` 查询特性是否支持以支持状况
+### `media` features
 
-详细参见：[media features](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_features)
+Reference for details: [media features](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Media_features)
 
-### 查询`screen`
+### Query `screen`
 
   - `max-width`
   - `min-width`
@@ -30,17 +37,19 @@ CSS 文件中的 media query，格式示例：
   - `min-height`
 
 ### Logical operators
+
   - `and`
   - `not`
   - `only`
   - `\s`: or
 
-## `<link>` 和 `@import` 的 media
+##  `<link>` and `@import`
 
-格式：
+Format:
+
 ```html
-<link rel="stylesheet" type="text/css" href="print.css" media="print"><!-- if printing supported -->
-<link rel="stylesheet" media="screen and (color)" rel="stylesheet" href="colorful-screen.css"><!-- if colored screen supported -->
+<link rel="stylesheet" type="text/css" href="print.css" media="print"><!-- if printing -->
+<link rel="stylesheet" media="screen and (color)" rel="stylesheet" href="colorful-screen.css"><!-- if color screen -->
 
 <style>
 @import "print.css" print;
